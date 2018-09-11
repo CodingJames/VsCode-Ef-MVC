@@ -8,7 +8,7 @@
   --CLI:\> dotnet add package Microsoft.EntityFrameworkCore.Design <br />
   AND <br />
   --CLI:\> dotnet add package Microsoft.EntityFrameworkCore.Tools.DotNet <br />
-3.Create Models
-4.Create DataContext 
-5.Congig
+3.Create Models<br />
+4.Create DataContext <br />
+5.Congig<br />
 "# VsCode-Ef-MVC" 
