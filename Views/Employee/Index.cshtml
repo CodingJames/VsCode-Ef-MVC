@@ -1,0 +1,26 @@
+@model IEnumerable<EF03.Models.Employee>
+
+<button class="btn btn-sm btn-success" onclick="window.location='Employee/CreateEmployee'">Create</button>
+<table class="table table-strip">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th colspan="2">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var x in Model){
+        <tr>
+            <td>@x.Id</td>
+            <td>@x.Name</td>
+            <td>@x.Age</td>
+            <td><button class="btn btn-sm btn-danger" onclick="window.location='Employee/DeleteEmployee?Id=@(x.Id)'"><i class="glyphicon glyphicon-trash "></i></button></td>
+            <td><button class="btn btn-sm btn-secondary" onclick="window.location='Employee/EditEmployee?Id=@(x.Id)'"><i class="glyphicon glyphicon-cog "></i></button></td>
+            
+        </tr>
+        }
+        
+    </tbody>
+</table>

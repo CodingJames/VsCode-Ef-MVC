@@ -1,0 +1,26 @@
+
+@model EF03.Models.Employee;
+
+<h1>Edit Employee</h1>
+
+@using (Html.BeginForm("UpdateEmployee","Employee",FormMethod.Post,new{autocomplete="off"})){
+    <div class="col-md-6">
+        <div class="col-12">
+            <input asp-for="Id" name="Id" class="form-control" readonly />
+        </div>  
+        <div class="col-12">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="col-12">
+            <label asp-for="Age"></label>
+            <input asp-for="Age" class="form-control"/>
+            <span asp-validation-for="Age" class="text-danger"></span>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" > Update </button>
+
+        </div>
+    </div>
+}

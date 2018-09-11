@@ -1,0 +1,16 @@
+<h1>Create Employee</h1>
+
+@using (Html.BeginForm("AddEmployee","Employee",FormMethod.Post,new{autocomplete="off"})){
+    <div class="col-md-6">
+        <div class="col-12">
+            <input name="Name" class="form-control" value="" />
+        </div>  
+        <div class="col-12">
+            <input name="Age" class="form-control" value="" />
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" > Create </button>
+
+        </div>
+    </div>
+}
